@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Alura - Encrypt Your Text</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="reset.css">
+        <script type="text/javascript" src="assets/script.js"></script>
+
+    </head>
+
+    <body>
+
+        <header>
+            <div class="logo">
+            <img src="material/logo.png">
+            </div>
+        </header>
+
+        <form>
+
+            <input type="text" id="textoEncriptado" placeholder="Ingrese el texto aquí"></textarea>
+            <textarea name="resultado" id="textoDesencriptado" cols="30" rows="10">Ningún mensaje fue encontrado</textarea>
+
+        </form>
+
+
+            <div class="important">
+                <img class="img-important" src="material/important.png">
+                <p class="message-important">Solo minusculas y sin acento</p>
+
+                <div class="buttons">
+                    <button type="button" id="encrypt">Encriptar</button>
+                    <button type="button" id="decrypt">Desencriptar</button>
+                    
+                </div>
+
+                <div button type="button" id="copiar">Copiar texto</button> 
+                </div>
+            </div>
+      
+            <!--
+        <div class="output">
+            <img id="img-avatar" class="img-avatar" src="material/avatar.png">
+            <h2 id="subtitle" class="subtitle">Ningun mensaje fue encontrado</h2>
+            <p id="no-content" class="no-content">Ingresa el texto que desees encriptar o desencriptar</p>
+        </div>
+        -->
+
+    </body>
+
+    <script>
+        var btn = document.querySelector("#encrypt");
+        btn.onclick = encriptar;
+
+        var btn2 = document.querySelector("#decrypt");
+        btn2.onclick = desencriptar;
+
+        var btn3 = document.querySelector("#copiar");
+        btn3.onclick = copiar;
+
+    </script>
+
+</html>

@@ -1,0 +1,140 @@
+body{
+    background-color: #F3F5FC;
+}
+
+.logo{
+    margin: 20px 50px;
+}
+
+#textoEncriptado{
+    width: 940px;
+    margin-top: 100px;
+    margin-left: 280px;
+    background-color: #F3F5FC;
+    color: #072B61;
+    border: none;
+    font-size: 24px;
+    outline: none;   
+}
+
+input::placeholder{
+    color: #072B61;
+    font-size: 26px;
+}
+
+.img-important{
+    margin-top: 250px;
+    margin-left: 320px;
+}
+
+.message-important{
+    box-sizing: border-box;
+    display: inline-block;
+    color: #495057;
+    margin: auto;
+    margin-left: 15px;    
+    font-size: 18px;
+}
+
+.buttons{
+    margin: 25px 300px;
+}
+
+#encrypt{
+    background-color: #072B61;
+    color: #FFFFFF;
+    border: 1px solid #072B61;
+    padding: 1.5rem;
+    width: 30%;
+    border-radius: 25px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 1s all;
+}
+
+#encrypt:hover{
+    background: #609ED4;
+}
+
+#decrypt{
+    background: none;
+    color: #052051;
+    border: 1px solid #052051;
+    padding: 1.5rem;
+    width: 30%;
+    border-radius: 25px;
+    font-size: 15px;
+    margin-left: 50px;
+    cursor: pointer;
+    transition: 1s all;
+    
+}
+
+#decrypt:hover{
+    background: #356EA9;
+    color: #FFFFFF;
+}
+
+.output{
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 25px;
+    height: 650px;
+    right: 140px;
+    top: 80px;
+    width: 20vw;
+    -webkit-box-shadow: -1px 7px 26px 6px rgb(0 0 0 / 20%);     
+
+}
+
+#img-avatar{
+    margin-top: 80px;
+}
+
+#subtitle {
+    color: #343A40;
+    text-align: center;
+    margin: 1.8rem;
+    width: 20vw;
+    font-size: 26px;
+}
+
+#textoDesencriptado{
+    position: absolute;
+    width: 400px;
+    height: 600px;
+    left: 1080px;
+    top: 40px;
+    resize: none;
+    background: #FFFFFF;
+    -webkit-box-shadow: -1px 7px 26px 6px rgb(0 0 0 / 20%);   
+    border-radius: 32px;
+    background-color: white;
+    background-image: url(material/avatar.png);
+    background-repeat: no-repeat;
+    background-position: 0px 230px;
+    font-weight: 400;
+    font-size: 22px;
+    text-align: center;
+    padding-top: 100px;
+    line-height: 150%;
+    border-color: #E5E5E5;
+}
+
+#copiar{
+    display: none;
+    background: #072B61;
+    color: #FFFFFF;
+	width: 10%;
+    padding: 1.5rem;
+    margin-left: 520px;
+    margin-top: 30px;
+	border-radius: 24px;
+    text-align: center;
+    font-size: 17px;
+    cursor: pointer;
+}
