@@ -8,8 +8,9 @@ function encriptar(){
     var textoEncriptado = textoEncriptado.replace(/a/img, "ai");
     var textoEncriptado = textoEncriptado.replace(/u/img, "ufat");
 
+    document.getElementById("imgAvatar").style.display = "none";
+    document.getElementById("no-content").style.display = "none";
     document.getElementById("textoDesencriptado").innerHTML = textoEncriptado;
-
     document.getElementById("copiar").style.display = "show";
     document.getElementById("copiar").style.display = "inherit";
 
@@ -24,7 +25,11 @@ function desencriptar(){
     var textoEncriptado = textoEncriptado.replace(/ai/img, "a");
     var textoEncriptado = textoEncriptado.replace(/ufat/img, "u");
 
+    document.getElementById("imgAvatar").style.display = "none";
+    document.getElementById("no-content").style.display = "none";
     document.getElementById("textoDesencriptado").innerHTML = textoEncriptado;
+    document.getElementById("copiar").style.display = "show";
+    document.getElementById("copiar").style.display = "inherit";
 
 }
 
