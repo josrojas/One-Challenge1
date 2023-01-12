@@ -37,6 +37,20 @@ input::placeholder{
     font-size: 18px;
 }
 
+.flex-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-container div {
+    display: flex;
+    width: 80%;
+    margin: 10px;
+    padding: 30px;
+    font-size: 15px;
+
+}
+
 .buttons{
     margin: 25px 300px;
 }
@@ -45,8 +59,9 @@ input::placeholder{
     background-color: #072B61;
     color: #FFFFFF;
     border: 1px solid #072B61;
+    margin-left: 200px;
     padding: 1.5rem;
-    width: 30%;
+    width: 20%;
     border-radius: 25px;
     font-size: 15px;
     cursor: pointer;
@@ -62,7 +77,7 @@ input::placeholder{
     color: #052051;
     border: 1px solid #052051;
     padding: 1.5rem;
-    width: 30%;
+    width: 20%;
     border-radius: 25px;
     font-size: 15px;
     margin-left: 50px;
@@ -76,6 +91,22 @@ input::placeholder{
     color: #FFFFFF;
 }
 
+.output{
+    position: absolute;
+    width: 400px;
+    height: 600px;
+    left: 1080px;
+    top: 100px;
+    resize: none;
+    font-weight: 400;
+    font-size: 22px;
+    text-align: center;
+    padding-top: 100px;
+    line-height: 150%;
+    border-color: #E5E5E5;    
+
+}
+
 #textoDesencriptado{
     position: absolute;
     width: 400px;
@@ -84,12 +115,8 @@ input::placeholder{
     top: 40px;
     resize: none;
     background: #FFFFFF;
+    box-shadow: -1px 7px 26px 6px rgb(0 0 0 / 20%);   
     border-radius: 32px;
-    box-shadow: -1px 7px 26px 6px rgb(0 0 0 / 20%); 
-    background-color: white;
-    background-image: url(material/avatar.png);
-    background-repeat: no-repeat;
-    background-position: 0px 230px;
     font-weight: 400;
     font-size: 22px;
     text-align: center;
@@ -104,10 +131,12 @@ input::placeholder{
     color: #FFFFFF;
 	width: 10%;
     padding: 1.5rem;
-    margin-left: 520px;
+    margin-left: 420px;
     margin-top: 30px;
+    padding-left: 100px;
 	border-radius: 24px;
     text-align: center;
     font-size: 17px;
-    cursor: pointer;
+    cursor: pointer;   
+ 
 }
