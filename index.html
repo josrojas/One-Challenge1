@@ -8,7 +8,6 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="reset.css">
         <script type="text/javascript" src="assets/script.js"></script>
-  
 
     </head>
 
@@ -20,17 +19,19 @@
             </div>
         </header>
 
-        <form>
 
             <input type="text" id="textoEncriptado" placeholder="Ingrese el texto aquí"></textarea>
-            <textarea name="resultado" id="textoDesencriptado" cols="30" rows="10">Ningún mensaje fue encontrado</textarea>
 
-        </form>
+            <textarea name="resultado" id="textoDesencriptado" cols="30" rows="10">Ningún mensaje fue encontrado</textarea>
 
 
             <div class="important">
                 <img class="img-important" src="material/important.png">
                 <p class="message-important">Solo minusculas y sin acento</p>
+
+            </div>
+
+            <div class="flex-container">
 
                 <div class="buttons">
                     <button type="button" id="encrypt">Encriptar</button>
@@ -41,6 +42,11 @@
                 <div button type="button" id="copiar">Copiar texto</button> 
                 </div>
             </div>
+      
+        <div class="output">
+            <img id="imgAvatar" class="img-avatar" src="material/avatar.png">
+            <p id="no-content" class="no-content">Ingresa el texto que desees encriptar o desencriptar</p>
+        </div>
 
     </body>
 
