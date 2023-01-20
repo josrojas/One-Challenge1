@@ -19,33 +19,29 @@
             </div>
         </header>
 
+        <div class="flex-container">
 
             <input type="text" id="textoEncriptado" placeholder="Ingrese el texto aquí"></textarea>
 
             <textarea name="resultado" id="textoDesencriptado" cols="30" rows="10">Ningún mensaje fue encontrado</textarea>
-
+            
+            <img id="imgAvatar" class="img-avatar" src="material/avatar.png">
+            <p id="no-content" class="no-content">Ingresa el texto que desees encriptar o desencriptar</p>
 
             <div class="important">
                 <img class="img-important" src="material/important.png">
+
                 <p class="message-important">Solo minusculas y sin acento</p>
-
             </div>
 
-            <div class="flex-container">
-
-                <div class="buttons">
-                    <button type="button" id="encrypt">Encriptar</button>
-                    <button type="button" id="decrypt">Desencriptar</button>
-                    
-                </div>
-
-                <div button type="button" id="copiar">Copiar texto</button> 
-                </div>
+            <div class="buttons">
+                <button type="button" id="encrypt">Encriptar</button>
+                <button type="button" id="decrypt">Desencriptar</button>  
             </div>
-      
-        <div class="output">
-            <img id="imgAvatar" class="img-avatar" src="material/avatar.png">
-            <p id="no-content" class="no-content">Ingresa el texto que desees encriptar o desencriptar</p>
+
+            <div button type="button" id="copiar">Copiar texto</button> 
+            </div>
+            
         </div>
 
     </body>
